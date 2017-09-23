@@ -1,0 +1,8 @@
+{
+  "name": "joinea",
+  "app_id": "54922531",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>inicio del JoInEA</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Bienvenido a la JoInEA 2017!</h2>
+  <div>
+    <ion-item>
+      <ion-label>Caja de texto</ion-label>
+      <ion-input [(ngModel)]="valor"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button color="dark" (click)="agregar()"> Boton</button>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button color="secondary" (click)="abrirNoticias()">Abrir Noticias</button>
+    </ion-item>
+  </div>
+
+  <p>
+    {{valor}}
+  </p>
+
+  <p>
+    {{ saludo }}
+  </p>
+
+  <p *ngIf='saludazo'>
+    esta el saludazo - {{ saludazo }}
+  </p>
+
+  <!-- <h3 *ngFor="let item of arr">
+    {{ item.nombre }}
+  </h3> -->
+
+  <ion-list>
+    <ion-item *ngFor="let item of arr">
+      {{ item.nombre }}
+    </ion-item>
+  </ion-list>
+
+
+
+</ion-content>
